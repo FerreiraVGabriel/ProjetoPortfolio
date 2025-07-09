@@ -1,0 +1,10 @@
+{
+  "NAV-BAR": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "PROJECTS": "Projects",
+    "SKILLS": "Skills",
+    "THEME_LIGHT": "☀️ Light Theme",
+    "THEME_DARK": "🌙 Dark Theme"
+  }
+}

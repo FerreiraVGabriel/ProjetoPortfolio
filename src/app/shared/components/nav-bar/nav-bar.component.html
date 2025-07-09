@@ -1,7 +1,7 @@
 
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/students">HOME</a>
+    <a class="navbar-brand" routerLink="/students">{{ 'NAV-BAR.HOME' | translate }}</a>
 
     <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
       <span class="navbar-toggler-icon"></span>
@@ -12,10 +12,13 @@
         <div class="col-md-6">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="/schools">Escolas </a>
+              <a class="nav-link" href="/schools">{{ 'NAV-BAR.ABOUT' | translate }}</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/students">Alunos </a>
+              <a class="nav-link" href="/students">{{ 'NAV-BAR.PROJECTS' | translate }}</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/students">{{ 'NAV-BAR.SKILLS' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -24,8 +27,29 @@
 
         <div class="col-md-4 d-flex justify-content-end align-items-center">
           <button (click)="changeTheme()">
-            {{ isDarkTheme ? '☀️ Tema Claro' : '🌙 Tema Escuro' }}
+            {{ isDarkTheme ? ('NAV-BAR.THEME_LIGHT' | translate) : ('NAV-BAR.THEME_DARK' | translate) }}
           </button>
+          <mat-select
+            class="form-control lang-select"
+            [value]="translate.currentLang"
+            (selectionChange)="changeLanguage($event.value)"
+            disableRipple
+          >
+            <mat-select-trigger>
+              <img
+                [src]="getFlag(translate.currentLang)"
+                width="20"
+                class="me-1"
+                style="vertical-align: middle; margin-right: 4px;"
+              />
+              {{ getLabel(translate.currentLang) }}
+            </mat-select-trigger>
+
+            <mat-option *ngFor="let lang of languages" [value]="lang.value">
+              <img [src]="lang.flag" width="20" class="me-1" />
+              {{ lang.label }}
+            </mat-option>
+          </mat-select>
 
         </div>
       </div>

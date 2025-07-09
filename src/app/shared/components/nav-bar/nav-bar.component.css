@@ -24,4 +24,7 @@ li{
     cursor: pointer;
 } 
   
-  
+.lang-select {
+  width: 180px; /* ou o valor que desejar */
+}
+ 
