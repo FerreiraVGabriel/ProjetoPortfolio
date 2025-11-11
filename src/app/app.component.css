@@ -1,0 +1,6 @@
+.section-divider {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 2rem auto;
+  width: 80%;
+}

@@ -6,5 +6,24 @@
     "SKILLS": "Skills",
     "THEME_LIGHT": "☀️ Light Theme",
     "THEME_DARK": "🌙 Dark Theme"
+  },
+  "ABOUT-ME": {
+    "TITLE": "About Me",
+    "P1": "Hi! My name is Gabriel Vitor Ferreira do Amaral, I’m 29 years old and I’m a full-stack developer.",
+    "P2": "I currently work with technologies like .NET, Angular and SQL Server, and I also have experience with Docker and AWS.",
+    "P3": "I'm passionate about technology, enjoy challenges, working in a team, and I'm always looking to improve myself.",
+    "AGE": "Age",
+    "CITY": "City",
+    "EMAIL": "Email"
+  },
+    "SKILLS": {
+    "TITLE": "Skills",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "OTHERS": "Others"
+  },
+  "TIMELINE": {
+    "TITLE": "My Journey"
   }
+
 }

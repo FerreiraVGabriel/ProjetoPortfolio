@@ -2,9 +2,28 @@
   "NAV-BAR": {
     "HOME": "Início",
     "ABOUT": "Sobre",
-    "PROJECTS": "Projects",
+    "PROJECTS": "Projetos",
     "SKILLS": "Habilidades",
     "THEME_LIGHT": "☀️ Tema Claro",
     "THEME_DARK": "🌙 Tema Escuro"
+  },
+  "ABOUT-ME": {
+    "TITLE": "Sobre mim",
+    "P1": "Olá! Meu nome é Gabriel Vitor Ferreira do Amaral, tenho 29 anos e sou desenvolvedor full-stack.",
+    "P2": "Atualmente trabalho com tecnologias como .NET, Angular e SQL Server, além de ter experiência com Docker e AWS.",
+    "P3": "Sou apaixonado por tecnologia, gosto de desafios, de trabalhar em equipe e estou sempre buscando me aprimorar.",
+    "AGE": "Idade",
+    "CITY": "Cidade",
+    "EMAIL": "Email"
+  },
+  "SKILLS": {
+    "TITLE": "Habilidades",
+    "FRONTEND": "Front-end",
+    "BACKEND": "Back-end",
+    "OTHERS": "Outras"
+  },
+  "TIMELINE": {
+    "TITLE": "Minha Trajetória"
   }
+
 }
